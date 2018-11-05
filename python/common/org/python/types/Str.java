@@ -1771,7 +1771,7 @@ public class Str extends org.python.types.Object {
     )
     public org.python.Object zfill(org.python.Object width) {
         if (width == null) {
-            throw new org.python.exceptions.TypeError("zfill() takes exactly 1 argument (0 given)");
+            throw new org.python.exceptions.TypeError("zfill() takes exactly one argument (0 given)");
         } else if (width instanceof org.python.types.Float) {
             throw new org.python.exceptions.TypeError("integer argument expected, got float");
         } else if (!(width instanceof org.python.types.Int)) {
