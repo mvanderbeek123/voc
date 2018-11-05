@@ -443,7 +443,7 @@ public class Str extends org.python.types.Object {
         if (org.Python.VERSION < 0x03060000) {
             throw new org.python.exceptions.TypeError("Can't convert '" + other.typeName() + "' object to str implicitly");
         } else {
-            throw new org.python.exceptions.TypeError("must be str, not " + other.typeName());
+            throw new org.python.exceptions.TypeError("can only concatenate str (not \"" + other.typeName()+"\") to str");
         }
     }
 
